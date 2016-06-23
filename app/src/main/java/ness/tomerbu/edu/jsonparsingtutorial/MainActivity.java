@@ -6,9 +6,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,12 +15,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        String json ="{main:{}}";
-        try {
-            JSONObject o = new JSONObject(json);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        new ContactsAsyncTask().execute();
     }
 
     @Override

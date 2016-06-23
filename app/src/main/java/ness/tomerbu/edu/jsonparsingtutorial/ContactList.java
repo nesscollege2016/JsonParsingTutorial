@@ -13,6 +13,14 @@ public class ContactList {
      */
     public ContactList() {
     }
+
+    @Override
+    public String toString() {
+        return "ContactList{" +
+                "contacts=" + contacts +
+                '}';
+    }
+
     public void add(Contact contact){
         contacts.add(contact);
     }

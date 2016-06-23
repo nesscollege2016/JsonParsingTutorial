@@ -16,6 +16,18 @@ public class Contact {
     public Contact() {
     }
 
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", gender='" + gender + '\'' +
+                ", phone=" + phone +
+                '}';
+    }
+
     /**
      * 
      * @param id

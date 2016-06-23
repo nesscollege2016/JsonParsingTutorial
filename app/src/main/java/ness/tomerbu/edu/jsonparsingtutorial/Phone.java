@@ -6,6 +6,15 @@ public class Phone {
     private String home;
     private String office;
 
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "mobile='" + mobile + '\'' +
+                ", home='" + home + '\'' +
+                ", office='" + office + '\'' +
+                '}';
+    }
+
     /**
      * No args constructor for use in serialization
      * 
