@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JsonParsingTutorial</string>
+    <string name="action_settings">Settings</string>
+</resources>
